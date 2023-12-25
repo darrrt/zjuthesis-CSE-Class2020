@@ -17,33 +17,33 @@
     %   Fix songti font invocation in `ctex` package on MacOS old version, to enable bold font
     %   Detailes in: https://github.com/TheNetAdmin/zjuthesis/issues/48
     %   Similar implementation: https://github.com/xueruini/thuthesis/blob/a86b0824da527268645571cc5fe3096d65a665b3/thuthesis.dtx#L1447-L1461
-    \setCJKfamilyfont{zhfs}   {STFangsong}      [AutoFakeBold={\FakeBoldSize}]
-    \setCJKfamilyfont{zhhei}  {Heiti SC Light}  [BoldFont={Heiti SC Medium}]
-    \setCJKfamilyfont{zhkai}  {Kaiti SC}        [BoldFont={Kaiti SC Bold}]
-    \setCJKfamilyfont{zhsong} {Songti SC Light} [BoldFont={Songti SC Bold}]
+    \setCJKfamilyfont{zhfs}   {STFangsong}      [AutoFakeBold={\FakeBoldSize}, Path=./fonts/]
+    \setCJKfamilyfont{zhhei}  {Heiti SC Light}  [BoldFont={Heiti SC Medium}, Path=./fonts/]
+    \setCJKfamilyfont{zhkai}  {Kaiti SC}        [BoldFont={Kaiti SC Bold}, Path=./fonts/]
+    \setCJKfamilyfont{zhsong} {Songti SC Light} [BoldFont={Songti SC Bold}, Path=./fonts/]
     
-    \setCJKmainfont[AutoFakeBold={\FakeBoldSize}]{STFangsong}
+    \setCJKmainfont[AutoFakeBold={\FakeBoldSize}, Path=./fonts/]{STFangsong}
 }
 {
     % Older MacOS
     % Fonts
-    \setCJKfamilyfont{zhfs}   {STFangsong} [AutoFakeBold={\FakeBoldSize}]
-    \setCJKfamilyfont{zhhei}  {STHeiti}    [AutoFakeBold={\FakeBoldSize}]
-    \setCJKfamilyfont{zhkai}  {STKaiti}    [AutoFakeBold={\FakeBoldSize}]
-    \setCJKfamilyfont{zhsong} {STSong}     [AutoFakeBold={\FakeBoldSize}]
+    \setCJKfamilyfont{zhfs}   {STFangsong} [AutoFakeBold={\FakeBoldSize}, Path=./fonts/]
+    \setCJKfamilyfont{zhhei}  {STHeiti}    [AutoFakeBold={\FakeBoldSize}, Path=./fonts/]
+    \setCJKfamilyfont{zhkai}  {STKaiti}    [AutoFakeBold={\FakeBoldSize}, Path=./fonts/]
+    \setCJKfamilyfont{zhsong} {STSong}     [AutoFakeBold={\FakeBoldSize}, Path=./fonts/]
 
-    \setCJKmainfont[AutoFakeBold={\FakeBoldSize}]{STFangsong}
+    \setCJKmainfont[AutoFakeBold={\FakeBoldSize}, Path=./fonts/]{STFangsong}
 }
 }
 {
     % Windows or other platform
-    \setCJKfamilyfont{zhfs}   {FangSong} [AutoFakeBold={\FakeBoldSize}]
-    \setCJKfamilyfont{zhhei}  {SimHei}   [AutoFakeBold={\FakeBoldSize}]
-    \setCJKfamilyfont{zhkai}  {KaiTi}    [AutoFakeBold={\FakeBoldSize}]
-    \setCJKfamilyfont{zhsong} {SimSun}   [AutoFakeBold={\FakeBoldSize}]
+    \setCJKfamilyfont{zhfs}   {FangSong} [AutoFakeBold={\FakeBoldSize}, Path=./fonts/]
+    \setCJKfamilyfont{zhhei}  {SimHei}   [AutoFakeBold={\FakeBoldSize}, Path=./fonts/]
+    \setCJKfamilyfont{zhkai}  {KaiTi}    [AutoFakeBold={\FakeBoldSize}, Path=./fonts/]
+    \setCJKfamilyfont{zhsong} {SimSun}   [AutoFakeBold={\FakeBoldSize}, Path=./fonts/]
 
-    \setCJKmainfont[AutoFakeBold={\FakeBoldSize}]{FangSong}
+    \setCJKmainfont[AutoFakeBold={\FakeBoldSize}, Path=./fonts/]{FangSong}
 }
 
-\setmainfont{Times New Roman}
+\setmainfont[Path=./fonts/, BoldFont={*Bold}, ItalicFont={*Italic}, BoldItalicFont={*BoldItalic}]{TimesNewRoman}
 \renewcommand{\bibfont}{\zihao{5}\songti}

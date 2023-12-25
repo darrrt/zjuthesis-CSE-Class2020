@@ -10,17 +10,17 @@
             {
                 % MacOS El Capitan and later version
                 % https://github.com/CTeX-org/ctex-kit/issues/351
-                \setCJKmainfont[BoldFont={Songti SC Bold}]{Songti SC Light}
+                \setCJKmainfont[BoldFont={Songti SC Bold}, Path=./fonts/]{Songti SC Light}
             }
             {
                 % Older MacOS
                 % Fonts
-                \setCJKmainfont[AutoFakeBold={\FakeBoldSize}]{STSong}
+                \setCJKmainfont[AutoFakeBold={\FakeBoldSize}, Path=./fonts/]{STSong}
             }
         }
         {
             % Windows or other platform
-            \setCJKmainfont[AutoFakeBold={\FakeBoldSize}]{SimSun}
+            \setCJKmainfont[AutoFakeBold={\FakeBoldSize}, Path=./fonts/]{SimSun}
         }
     }
     {} % \equal{\GradLevel}{doctor}
