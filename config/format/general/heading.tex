@@ -14,8 +14,10 @@
             name={,、},
             aftername=,
             number=\chinese{chapter},
-            beforeskip=12pt,
-            afterskip=6pt
+            beforeskip=-30pt,
+            % -36顶格
+            afterskip=-4pt
+            % 13磅段+前0.5段后0.5 总共26磅
         },
         section =
         {
@@ -24,6 +26,7 @@
             number=\arabic{section},
             beforeskip=13pt,
             afterskip=13pt
+            % 单倍行距为14磅+段前0.5段后0.5，共28磅
         },
         subsection =
         {
@@ -32,6 +35,7 @@
             number=\arabic{section}.\arabic{subsection},
             beforeskip=13pt,
             afterskip=13pt
+            % 设置为单倍行距12磅段前段后各0.5行
         },
         subsubsection =
         {
@@ -42,6 +46,7 @@
             number=\arabic{section}.\arabic{subsection}.\arabic{subsubsection},
             beforeskip=0pt,
             afterskip=0pt
+            % 单倍行距为12，设置1.5倍行距，段前段后0行
         }
     }
 }

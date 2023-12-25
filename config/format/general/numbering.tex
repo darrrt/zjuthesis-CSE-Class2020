@@ -12,7 +12,7 @@
     \renewcommand{\thelstlisting}{\arabic{section}.\arabic{lstlisting}}
 
     \counterwithin*{equation}{section}
-    \renewcommand{\theequation}{\arabic{section}-\arabic{equation}}
+    \renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
 
     \counterwithin*{algorithm}{section}
     \renewcommand{\thealgorithm}{\arabic{section}.\arabic{algorithm}}
@@ -30,7 +30,7 @@
     \renewcommand{\thelstlisting}{\arabic{chapter}.\arabic{lstlisting}}
 
     \counterwithin*{equation}{chapter}
-    \renewcommand{\theequation}{\arabic{chapter}-\arabic{equation}}
+    \renewcommand{\theequation}{\arabic{chapter}.\arabic{equation}}
 
     \counterwithin*{algorithm}{chapter}
     \renewcommand{\thealgorithm}{\arabic{chapter}.\arabic{algorithm}}
@@ -56,7 +56,7 @@
     \renewcommand{\thelstlisting}{\Alph{subsection}.\arabic{lstlisting}}
 
     \counterwithin*{equation}{subsection}
-    \renewcommand{\theequation}{\Alph{subsection}-\arabic{equation}}
+    \renewcommand{\theequation}{\Alph{subsection}.\arabic{equation}}
 
     \counterwithin*{algorithm}{subsection}
     \renewcommand{\thealgorithm}{\Alph{subsection}.\arabic{algorithm}}
@@ -91,7 +91,7 @@
     \renewcommand{\thelstlisting}{\Alph{section}.\arabic{lstlisting}}
 
     \counterwithin*{equation}{section}
-    \renewcommand{\theequation}{\Alph{section}-\arabic{equation}}
+    \renewcommand{\theequation}{\Alph{section}.\arabic{equation}}
 
     \counterwithin*{algorithm}{section}
     \renewcommand{\thealgorithm}{\Alph{section}.\arabic{algorithm}}
@@ -112,7 +112,9 @@
     {
         \ifthenelse{\equal{\undergradcurrstage}{proposal}}
         {
-            \chaptermajornumbering
+            % \chaptermajornumbering
+            % 控院为分章标题
+            \sectionmajornumbering
         }
         {
             \sectionmajornumbering
